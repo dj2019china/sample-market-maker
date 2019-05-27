@@ -331,4 +331,3 @@ if __name__ == "__main__":
     ws.connect("https://testnet.bitmex.com/api/v1")
     while(ws.ws.sock.connected):
         sleep(1)
-

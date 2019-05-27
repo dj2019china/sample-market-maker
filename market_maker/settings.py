@@ -7,7 +7,6 @@ import sys
 from market_maker.utils.dotdict import dotdict
 import market_maker._settings_base as baseSettings
 
-
 def import_path(fullpath):
     """
     Import a file with full path specification. Allows one to
@@ -20,7 +19,6 @@ def import_path(fullpath):
     importlib.reload(module)  # Might be out of date
     del sys.path[0]
     return module
-
 
 userSettings = import_path(os.path.join('.', 'settings'))
 symbolSettings = None
